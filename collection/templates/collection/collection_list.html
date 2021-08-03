@@ -1,0 +1,13 @@
+{%  extends 'collection/main_page.html' %}
+
+{% block content %}
+    <div class="col board-game">
+        {%  for board_game in board_games %}
+            <div>
+                <h3><a href="{% url 'board_game_detail' pk=board_game.pk %}">{{ board_game.title }}</a></h3>
+                <p>{{ board_game.comment }}</p>
+                <p>Владелец: {{ board_game.owner }}</p>
+            </div>
+        {%  endfor %}
+    </div>
+{% endblock %}

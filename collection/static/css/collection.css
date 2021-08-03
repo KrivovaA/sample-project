@@ -1,0 +1,59 @@
+body {
+    background-color: rgba(255, 220, 232, 0.26);
+    font-family: Coolsville, serif;
+    font-size: 18px;
+}
+h1, h3 {
+    font-family: Algerian, serif;
+    color: #7d0d27;
+}
+a {
+    color: #7d0d27;
+    text-decoration: none;
+}
+a:hover {
+    color: #610205;
+    text-decoration: underline;
+}
+form p{
+    display: flex;
+}
+.header {
+    background-color: #470103;
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.header a {
+    color: #d6aaa5;
+}
+.plus {
+    padding-top: 1%;
+}
+.board-game {
+    margin: 10px
+}
+.edit-board-game {
+    display: flex;
+    flex-direction: column;
+}
+
+.edit-board-game label {
+    margin: 5px 0;
+}
+.edit-board-game button {
+    margin: 10px auto;
+    width: 300px;
+    background-color: #470103;
+    color: #d6aaa5;
+    font-size: 24px;
+}
+.edit-board-game button:hover {
+    background-color: #863b3d;
+    color: #550403;
+    font-size: 24px;
+}
+.header-edit {
+    display: flex;
+}

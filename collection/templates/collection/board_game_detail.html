@@ -1,0 +1,14 @@
+{% extends 'collection/main_page.html' %}
+
+{% block content %}
+    <div class="col-8 board-game">
+        <div class="header-edit">
+            <h3>{{ board_game.title }}</h3>
+            <a class="btn btn-default" href="{% url 'edit_board_game' pk=board_game.pk %}"><i class="bi bi-pencil"></i></a>
+        </div>
+        <p>{{ board_game.comment }}</p>
+        <p>Дата добавления в коллекцию: {{ board_game.created_date }}</p>
+        <p>Цена: {{ board_game.price }}</p>
+        <p>Владелец: {{ board_game.owner }}</p>
+    </div>
+{% endblock %}

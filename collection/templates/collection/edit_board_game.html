@@ -1,0 +1,11 @@
+{% extends 'collection/main_page.html' %}
+
+{% block content %}
+    <div class="col-6 board-game">
+        <h3>Добавить игру</h3>
+        <form method="post" class="edit-board-game">{% csrf_token %}
+            {{ form.as_table }}
+            <button type="submit" class="save btn btn-default">Save</button>
+        </form>
+    </div>
+{% endblock %}
